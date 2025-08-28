@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The DigiCentra</title>
+  <meta name="description" content="The DigiCentra official website - Home, About, Services, and Privacy Policy." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./logo.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+    .backdrop-hero { background: linear-gradient(135deg,#eef2ff 0%, #f8fafc 60%); }
+    .modal-backdrop { background: rgba(2,6,23,0.6); }
+  </style>
+</head>
+
+  <body class="bg-gradient-to-b from-white to-slate-50 text-slate-800">
+    <!-- Header -->
+ <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    
+    <!-- Logo + Name -->
+    <a href="#home" class="flex items-center gap-3 font-semibold text-xl">
+      <img src="./logo.jpg" alt="Logo" class="h-10 w-10 rounded-full">
+      <span>The DigiCentra</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-base">
+      <a href="#home" class="hover:text-blue-600 transition">Home</a>
+      <a href="#about" class="hover:text-blue-600 transition">About</a>
+      <a href="#services" class="hover:text-blue-600 transition">Services</a>
+      <a href="#privacy" class="hover:text-blue-600 transition">Privacy Policy</a>
+    </nav>
+
+    <!-- Contact -->
+   <div class="hidden md:flex items-center text-base text-slate-600 space-x-2">
+  <!-- Simple Phone Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M3.654 1.328a.678.678 0 0 1 .738-.092l2.522 1.01c.246.099.41.34.385.6l-.27 2.79a.678.678 0 0 1-.57.61l-1.6.267a11.72 11.72 0 0 0 5.516 5.516l.267-1.6a.678.678 0 0 1 .61-.57l2.79-.27a.678.678 0 0 1 .6.385l1.01 2.522a.678.678 0 0 1-.092.738l-1.272 1.272c-.196.197-.478.27-.74.198A15.534 15.534 0 0 1 1.86 3.999c-.072-.262.001-.544.198-.74L3.654 1.328z"/>
+  </svg>
+  <span>Call: +1 (555) 123-4567</span>
+</div>
+
+
+  </div>
+</header>
+
+
+    <!-- Hero (big, scrollable feel) -->
+    <section id="home" class="backdrop-hero">
+  <div class="max-w-7xl mx-auto px-6 pt-16 pb-28 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Grow faster with The DigiCentra</h1>
+      <p class="mt-6 text-xl text-slate-600 max-w-xl">Creative digital solutions — marketing, monetization, apps, content and branding. We help brands turn visitors into customers.</p>
+      <div class="mt-8 flex gap-4">
+        <a href="#services" class="px-6 py-3 rounded-2xl bg-black text-white hover:opacity-90 shadow-soft">Explore Services</a>
+        <a href="#about" class="px-6 py-3 rounded-2xl border border-slate-300 hover:bg-slate-100">Who we are</a>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-soft">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="agency" class="w-full h-96 object-cover" />
+    </div>
+  </div>
+</section>
+
+
+    <!-- About -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">About The DigiCentra</h2>
+          <p class="mt-4 text-slate-600 leading-relaxed">We are a full-stack digital agency that builds brand experiences and revenue channels. From social monetization to performance marketing, our approach is simple: measurable results, transparent process, and creative execution.</p>
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600">
+            <li>✅ Strategy & Planning</li>
+            <li>✅ Creative Content</li>
+            <li>✅ Ads & Monetization</li>
+            <li>✅ Web & App Development</li>
+          </ul>
+        </div>
+       <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
+  <h3 class="font-semibold">Our Promise</h3>
+  <p class="mt-2 text-slate-600">
+    Clear communication, timely delivery and ROI-focused campaigns.  
+    We act like partners, not vendors.  
+    Our team ensures transparency at every stage of the process.  
+    We believe in building long-term relationships, not one-time projects.
+  </p>
+  <div class="mt-4 text-sm text-slate-500">Serving clients globally from our office.</div>
+</div>
+
+      </div>
+    </section>
+
+  <!-- Services (6 cards) -->
+<section id="services" class="bg-white border-t border-b border-slate-200 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold">Our Services</h2>
+    <p class="mt-2 text-slate-600 max-w-2xl">
+      Comprehensive digital services to scale your brand, build visibility, and generate consistent revenue growth.
+    </p>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Digital Marketing -->
+      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
+        <div class="text-3xl">🎯</div>
+        <h3 class="mt-3 font-semibold">Digital Marketing</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          End-to-end campaigns across multiple platforms.  
+          From strategy to execution, we focus on generating qualified leads.  
+          Regular performance tracking ensures ROI-driven growth.  
+          Perfect for businesses that want consistent visibility.
+        </p>
+        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
+      </div>
+
+      <!-- SEO & Content -->
+      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
+        <div class="text-3xl">🔍</div>
+        <h3 class="mt-3 font-semibold">SEO & Content</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Technical SEO audits to fix hidden issues.  
+          Keyword-focused blogs and landing pages for organic growth.  
+          Content strategies that position your brand as an authority.  
+          A long-term approach to dominate search results.
+        </p>
+        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
+      </div>
+
+      <!-- App & Web Development -->
+      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
+        <div class="text-3xl">📱</div>
+        <h3 class="mt-3 font-semibold">App & Web Development</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Modern, responsive websites optimized for speed and SEO.  
+          Scalable mobile apps built with the latest frameworks.  
+          Custom features tailored to your business needs.  
+          Secure, reliable, and future-ready digital solutions.
+        </p>
+        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
+      </div>
+
+      <!-- Social Media & Ads -->
+      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
+        <div class="text-3xl">📣</div>
+        <h3 class="mt-3 font-semibold">Social Media & Ads</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Engaging social media campaigns that grow audiences.  
+          Paid ads that maximize reach and generate real conversions.  
+          Creative visuals and copywriting tailored to your niche.  
+          Consistent tracking to ensure budget efficiency.
+        </p>
+        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
+      </div>
+
+      <!-- FB Monetization -->
+      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
+        <div class="text-3xl">💸</div>
+        <h3 class="mt-3 font-semibold">FB Monetization</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Setup and manage your Facebook monetization properly.  
+          Optimize content for maximum ad revenue potential.  
+          Compliance with FB Partner guidelines to stay eligible.  
+          Scale your creator income with strategic guidance.
+        </p>
+        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
+      </div>
+
+      <!-- Branding & Content -->
+      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
+        <div class="text-3xl">🎨</div>
+        <h3 class="mt-3 font-semibold">Branding & Content</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Strong visual identity that makes your brand unforgettable.  
+          High-quality content including reels, graphics, and campaigns.  
+          Storytelling that connects with your audience emotionally.  
+          Designed to turn viewers into loyal customers.
+        </p>
+        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
+      </div>
+
+    </div>
+
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="max-w-7xl mx-auto px-6 py-8">
+  <h3 class="text-3xl font-bold mb-8 text-left">What Our Clients Say</h3>
+
+  <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+    
+    <!-- Card 1 -->
+    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Michael Johnson">
+        <div>
+          <p class="font-semibold text-lg">Michael Johnson</p>
+          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <p class="mt-5 text-slate-600 leading-relaxed text-base">
+        “Professional, transparent and real results.  
+        Their team guided us step by step with clarity.  
+        We always felt supported throughout the process.”
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Sarah Williams">
+        <div>
+          <p class="font-semibold text-lg">Sarah Williams</p>
+          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <p class="mt-5 text-slate-600 leading-relaxed text-base">
+        “Saved us time and doubled our revenue.  
+        The strategies were simple yet powerful.  
+        We now see consistent growth month after month.”
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="David Anderson">
+        <div>
+          <p class="font-semibold text-lg">David Anderson</p>
+          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <p class="mt-5 text-slate-600 leading-relaxed text-base">
+        “Great communication and flawless execution.  
+        Every milestone was met on time without delays.  
+        Truly feels like working with a trusted partner.”
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Emma Brown">
+        <div>
+          <p class="font-semibold text-lg">Emma Brown</p>
+          <div class="text-yellow-500 text-base">⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <p class="mt-5 text-slate-600 leading-relaxed text-base">
+        “Creative solutions that really worked for our brand.  
+        The designs were modern and campaign-ready.  
+        We saw positive feedback from customers instantly.”
+      </p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Christopher Martinez">
+        <div>
+          <p class="font-semibold text-lg">Christopher Martinez</p>
+          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <p class="mt-5 text-slate-600 leading-relaxed text-base">
+        “Delivered on time and exceeded expectations.  
+        Their proactive approach impressed our whole team.  
+        We now rely on them for all major campaigns.”
+      </p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <img src="https://randomuser.me/api/portraits/women/55.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Olivia Davis">
+        <div>
+          <p class="font-semibold text-lg">Olivia Davis</p>
+          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <p class="mt-5 text-slate-600 leading-relaxed text-base">
+        “Very professional and always supportive.  
+        They kept us informed and updated at all times.  
+        Truly reliable and highly recommended service.”
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Hide scrollbar CSS -->
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+</style>
+
+
+    <!-- Privacy Policy -->
+    <section id="privacy" class="bg-white border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    
+    <!-- Privacy Policy -->
+    <h2 class="text-2xl md:text-3xl font-bold">Privacy Policy</h2>
+    <p class="mt-3 text-slate-600">
+      At The DigiCentra, we value your privacy and are committed to protecting your personal information.  
+      Any data you provide through our forms is stored securely and used only for the purpose of providing our services.  
+      We do not sell, rent, or trade your personal data to third parties.  
+      Access to your information is limited to authorized personnel only.  
+      We may use your email or phone number to communicate updates or respond to inquiries.  
+      All data is handled in compliance with industry standards of security and confidentiality.  
+      By using our website, you consent to the collection and use of information as described in this policy.  
+      If you have questions about your privacy, feel free to contact us directly.
+    </p>
+
+    <!-- Terms & Conditions -->
+    <h2 id="terms" class="text-2xl md:text-3xl font-bold mt-12">Terms & Conditions</h2>
+    <p class="mt-3 text-slate-600">
+      By accessing and using The DigiCentra website, you agree to abide by the following terms and conditions.  
+      All services provided are subject to availability and may be modified or discontinued without prior notice.  
+      Users are responsible for providing accurate and updated information while submitting forms or requests.  
+      Unauthorized use of our website, including misuse of content or data scraping, is strictly prohibited.  
+      Payments (if applicable) must be made in full before services are delivered, unless otherwise agreed in writing.  
+      We are not liable for any indirect damages, delays, or service interruptions beyond our control.  
+      Intellectual property, including logos, designs, and written content, remains the sole property of The DigiCentra.  
+      These terms may be updated from time to time, and continued use of the site indicates acceptance of the latest version.
+    </p>
+
+  </div>
+</section>
+
+
+    <!-- Modal (hidden) -->
+    <div id="modal" class="fixed inset-0 hidden items-center justify-center modal-backdrop z-50">
+      <div class="bg-white rounded-2xl max-w-lg w-full p-6 mx-4">
+        <div class="flex items-start justify-between">
+          <h3 class="text-lg font-semibold">Get a Quote</h3>
+          <button id="closeModal" class="text-slate-500">✕</button>
+        </div>
+        <p id="modalService" class="text-sm text-slate-600 mt-2">Please fill the form and we'll get back to you.</p>
+        <form id="quoteForm" class="mt-4 grid gap-3">
+          <input id="service" type="hidden" name="service" />
+          <input id="name" type="text" placeholder="Full name" required class="px-4 py-3 rounded-lg border" />
+          <input id="email" type="email" placeholder="Email" required class="px-4 py-3 rounded-lg border" />
+          <input id="contact" type="tel" placeholder="Contact number" required class="px-4 py-3 rounded-lg border" />
+          <textarea id="notes" placeholder="Notes / project details" class="px-4 py-3 rounded-lg border h-24"></textarea>
+          <div class="flex items-center gap-3">
+            <button type="submit" class="px-4 py-2 rounded-lg bg-black text-white">Send</button>
+            <button type="button" id="cancel" class="px-4 py-2 rounded-lg border">Cancel</button>
+          </div>
+          <div id="formStatus" class="text-sm text-slate-600 mt-2"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer with address, phone, email -->
+    <footer class="py-12 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+        <div>
+          <h4 class="font-semibold">The DigiCentra</h4>
+          <p class="text-sm text-slate-600 mt-2">Digital solutions & monetization services.</p>
+        </div>
+        <div>
+          <h5 class="font-semibold">Contact</h5>
+          <p class="text-sm text-slate-600 mt-2">Phone: +1 (555) 123-4567<br>Email: hello@thedigicentra.com</p>
+        </div>
+        <div>
+          <h5 class="font-semibold">Address</h5>
+          <p class="text-sm text-slate-600 mt-2">117 South Lexington Street Ste 100<br>Harrisonville, MO 64701</p>
+        </div>
+      </div>
+    </footer>
+
+   <style>
+  section {
+    scroll-margin-top: 100px; /* jitna gap chahiye utna px badha do */
+  }
+</style>
+    <script>
+  // Modal logic
+  const modal = document.getElementById('modal');
+  const modalService = document.getElementById('modalService');
+  const serviceInput = document.getElementById('service');
+  const closeModal = document.getElementById('closeModal');
+  const cancel = document.getElementById('cancel');
+  const form = document.getElementById('quoteForm');
+  const formStatus = document.getElementById('formStatus');
+
+  document.querySelectorAll('.get-quote-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('div');
+      const title = card.querySelector('h3').innerText;
+      serviceInput.value = title;
+      modalService.innerText = 'Service: ' + title;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex', 'opacity-0');
+      setTimeout(() => modal.classList.remove('opacity-0'), 10);
+    });
+  });
+
+  function hideModal(){
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      formStatus.innerText = '';
+    }, 300); // smooth close
+  }
+  closeModal.addEventListener('click', hideModal);
+  cancel.addEventListener('click', hideModal);
+
+  // Form submit
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Modal smoothly band ho
+    hideModal();
+
+    // ✅ Notification create
+    const notification = document.createElement('div');
+    notification.innerText = "✅ Your form is submitted. We will contact you soon.";
+    notification.style.position = "fixed";
+    notification.style.top = "20px";
+    notification.style.right = "20px";
+    notification.style.background = "#4CAF50";
+    notification.style.color = "white";
+    notification.style.padding = "15px 20px";
+    notification.style.borderRadius = "10px";
+    notification.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+    notification.style.zIndex = "9999";
+    notification.style.fontSize = "16px";
+    notification.style.fontFamily = "sans-serif";
+    notification.style.opacity = "0";
+    notification.style.transform = "translateY(-10px)";
+    notification.style.transition = "all 0.4s ease";
+
+    document.body.appendChild(notification);
+
+    // Animate in
+    setTimeout(() => {
+      notification.style.opacity = "1";
+      notification.style.transform = "translateY(0)";
+    }, 50);
+
+    // 3 sec baad animate out + reload
+    setTimeout(() => {
+      notification.style.opacity = "0";
+      notification.style.transform = "translateY(-10px)";
+      setTimeout(() => {
+        notification.remove();
+        location.reload(); // ✅ page reload
+      }, 400);
+    }, 3000);
+
+    // Form reset
+    form.reset();
+  });
+</script>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" 
+  class="hidden fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300">
+  ↑
+</button>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" 
+  class="hidden fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg 
+         hover:bg-gray-800 transition-all duration-500 ease-in-out transform hover:scale-110 opacity-0">
+  <!-- Arrow Up Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Show button when scroll is down
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      scrollBtn.classList.remove("hidden");
+      scrollBtn.style.opacity = "1";
+    } else {
+      scrollBtn.style.opacity = "0";
+      setTimeout(() => {
+        if (scrollBtn.style.opacity === "0") {
+          scrollBtn.classList.add("hidden");
+        }
+      }, 500); // fade-out duration
+    }
+  });
+
+  // Smooth scroll to top
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
+  </body>
+</html>
