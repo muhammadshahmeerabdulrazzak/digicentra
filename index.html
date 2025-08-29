@@ -216,7 +216,7 @@
     <!-- Card 2 -->
     <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
       <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Sarah Williams">
+        <img src="https://randomuser.me/api/portraits/men/44.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Sarah Williams">
         <div>
           <p class="font-semibold text-lg">Sarah Williams</p>
           <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
@@ -248,7 +248,7 @@
     <!-- Card 4 -->
     <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
       <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Emma Brown">
+        <img src="https://randomuser.me/api/portraits/men/68.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Emma Brown">
         <div>
           <p class="font-semibold text-lg">Emma Brown</p>
           <div class="text-yellow-500 text-base">⭐⭐⭐⭐</div>
@@ -280,7 +280,7 @@
     <!-- Card 6 -->
     <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
       <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/women/55.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Olivia Davis">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Olivia Davis">
         <div>
           <p class="font-semibold text-lg">Olivia Davis</p>
           <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
@@ -367,27 +367,62 @@
       </div>
     </div>
 
-    <!-- Footer with address, phone, email -->
-    <footer class="py-12 bg-slate-50 border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-        <div>
-          <h4 class="font-semibold">The DigiCentra</h4>
-          <p class="text-sm text-slate-600 mt-2">Digital solutions & monetization services.</p>
-        </div>
-        <div>
-          <h5 class="font-semibold">Contact</h5>
-          <p class="text-sm text-slate-600 mt-2">Phone: +1 (555) 123-4567<br>Email: hello@thedigicentra.com</p>
-        </div>
-        <div>
-          <h5 class="font-semibold">Address</h5>
-          <p class="text-sm text-slate-600 mt-2">117 South Lexington Street Ste 100<br>Harrisonville, MO 64701</p>
-        </div>
+   <!-- Footer with address, phone, email -->
+<footer class="py-16 bg-slate-100 border-t border-slate-300">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+    
+    <!-- Company Info -->
+    <div>
+      <h4 class="font-bold text-lg">The DigiCentra</h4>
+      <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+        Digital solutions & monetization services.<br>
+        Helping businesses grow with modern strategies and tools.
+      </p>
+      <!-- Social Icons -->
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h5 class="font-semibold text-lg">Contact</h5>
+      <p class="text-sm text-slate-600 mt-3 space-y-2">
+        <span class="block">📞 Phone: +1 (281) 509 1984</span>
+        <span class="block">✉️ Email: info@thedigicentra.com</span>
+      </p>
+    </div>
+
+    <!-- Address -->
+    <div>
+      <h5 class="font-semibold text-lg">Address</h5>
+      <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+        117 South Lexington Street Ste 100<br>
+        Harrisonville, MO 64701<br>
+        United States
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-10 text-center text-sm text-slate-500 border-t pt-6">
+    © 2025 The DigiCentra. All rights reserved.
+  </div>
+</footer>
+
 
    <style>
   section {
-    scroll-margin-top: 100px; /* jitna gap chahiye utna px badha do */
+    scroll-margin-top: 30px; /* jitna gap chahiye utna px badha do */
   }
 </style>
     <script>
@@ -470,21 +505,23 @@
     form.reset();
   });
 </script>
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" 
-  class="hidden fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300">
-  ↑
-</button>
 
 <!-- Scroll to Top Button -->
+<!-- Scroll to Top Button -->
 <button id="scrollTopBtn" 
-  class="hidden fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg 
-         hover:bg-gray-800 transition-all duration-500 ease-in-out transform hover:scale-110 opacity-0">
+  class="hidden fixed bottom-6 right-6 bg-black text-white 
+         flex items-center justify-center 
+         rounded-full shadow-lg 
+         hover:bg-gray-800 transition-all duration-500 
+         ease-in-out transform hover:scale-110 opacity-0 aspect-square w-12">
+  
   <!-- Arrow Up Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
   </svg>
 </button>
+
+
 
 <script>
   const scrollBtn = document.getElementById("scrollTopBtn");
