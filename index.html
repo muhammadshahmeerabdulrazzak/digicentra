@@ -1,552 +1,792 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The DigiCentra</title>
-  <meta name="description" content="The DigiCentra official website - Home, About, Services, and Privacy Policy." />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./logo.jpg">
+  <head>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <style>
-    html { scroll-behavior: smooth; }
-    .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-    .backdrop-hero { background: linear-gradient(135deg,#eef2ff 0%, #f8fafc 60%); }
-    .modal-backdrop { background: rgba(2,6,23,0.6); }
-  </style>
-</head>
+    <title>The DigiCentra</title>
 
-  <body class="bg-gradient-to-b from-white to-slate-50 text-slate-800">
-    <!-- Header -->
- <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-    
-    <!-- Logo + Name -->
-    <a href="#home" class="flex items-center gap-3 font-semibold text-xl">
-      <img src="./logo.jpg" alt="Logo" class="h-10 w-10 rounded-full">
-      <span>The DigiCentra</span>
-    </a>
-
-    <!-- Navigation -->
-    <nav class="hidden md:flex items-center gap-8 text-base">
-      <a href="#home" class="hover:text-blue-600 transition">Home</a>
-      <a href="#about" class="hover:text-blue-600 transition">About</a>
-      <a href="#services" class="hover:text-blue-600 transition">Services</a>
-      <a href="#privacy" class="hover:text-blue-600 transition">Privacy Policy</a>
-    </nav>
-
-    <!-- Contact -->
-   <div class="hidden md:flex items-center text-base text-slate-600 space-x-2">
-  <!-- Simple Phone Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
-    <path d="M3.654 1.328a.678.678 0 0 1 .738-.092l2.522 1.01c.246.099.41.34.385.6l-.27 2.79a.678.678 0 0 1-.57.61l-1.6.267a11.72 11.72 0 0 0 5.516 5.516l.267-1.6a.678.678 0 0 1 .61-.57l2.79-.27a.678.678 0 0 1 .6.385l1.01 2.522a.678.678 0 0 1-.092.738l-1.272 1.272c-.196.197-.478.27-.74.198A15.534 15.534 0 0 1 1.86 3.999c-.072-.262.001-.544.198-.74L3.654 1.328z"/>
-  </svg>
-  <span>Call: +1 (555) 123-4567</span>
-</div>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-  </div>
-</header>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css"> 
+  </head>
 
+<body>
 
-    <!-- Hero (big, scrollable feel) -->
-    <section id="home" class="backdrop-hero">
-  <div class="max-w-7xl mx-auto px-6 pt-16 pb-28 grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Grow faster with The DigiCentra</h1>
-      <p class="mt-6 text-xl text-slate-600 max-w-xl">Creative digital solutions — marketing, monetization, apps, content and branding. We help brands turn visitors into customers.</p>
-      <div class="mt-8 flex gap-4">
-        <a href="#services" class="px-6 py-3 rounded-2xl bg-black text-white hover:opacity-90 shadow-soft">Explore Services</a>
-        <a href="#about" class="px-6 py-3 rounded-2xl border border-slate-300 hover:bg-slate-100">Who we are</a>
+  <!-- ***** Preloader Start ***** -->
+  <!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-soft">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="agency" class="w-full h-96 object-cover" />
-    </div>
-  </div>
-</section>
+  </div> -->
+  <!-- ***** Preloader End ***** -->
 
-
-    <!-- About -->
-    <section id="about" class="max-w-7xl mx-auto px-6 py-20">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 class="text-3xl font-bold">About The DigiCentra</h2>
-          <p class="mt-4 text-slate-600 leading-relaxed">We are a full-stack digital agency that builds brand experiences and revenue channels. From social monetization to performance marketing, our approach is simple: measurable results, transparent process, and creative execution.</p>
-          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600">
-            <li>✅ Strategy & Planning</li>
-            <li>✅ Creative Content</li>
-            <li>✅ Ads & Monetization</li>
-            <li>✅ Web & App Development</li>
+  <!-- Pre-header Starts -->
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8 col-7">
+          <ul class="info">
+            <li><a href="#"><i class="fa fa-envelope"></i>info@thedigicentra.com</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>+1 (281) 509 1984</a></li>
           </ul>
         </div>
-       <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
-  <h3 class="font-semibold">Our Promise</h3>
-  <p class="mt-2 text-slate-600">
-    Clear communication, timely delivery and ROI-focused campaigns.  
-    We act like partners, not vendors.  
-    Our team ensures transparency at every stage of the process.  
-    We believe in building long-term relationships, not one-time projects.
-  </p>
-  <div class="mt-4 text-sm text-slate-500">Serving clients globally from our office.</div>
+        <div class="col-lg-4 col-sm-4 col-5">
+          <ul class="social-media">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pre-header End -->
+
+  <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav d-flex align-items-center justify-content-between">
+          <!-- ***** Logo Start ***** -->
+          <a href="#home" class="navbar-brand d-flex align-items-center" style="padding-top:30px;">
+            <img src="assets/images/logo.jpg" alt="Logo" class="rounded-circle" style="height:45px; width:45px;">
+            <span class="ms-2 fw-bold" style="color:#007bff; font-size:20px;">The DigiCentra</span>
+          </a>
+          <!-- ***** Logo End ***** -->
+           
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="#about">About</a></li>
+            <li class="scroll-to-section"><a href="#services">Services</a></li>
+            <!-- <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
+            <li class="scroll-to-section"><a href="#blog">Blog</a></li> -->
+            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+            <li class="scroll-to-section">
+              <div class="border-first-button">
+                <a href="#contact" data-bs-toggle="modal" data-bs-target="#quoteModal">Free Quote</a>
+
+              </div>
+            </li>
+          </ul>
+          <a class="menu-trigger">
+            <span>Menu</span>
+          </a>
+          <!-- ***** Menu End ***** -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Bootstrap 5 CSS (agar pehle include nahi) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Toast container -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 1080">
+  <div id="quoteToast" class="toast align-items-center border-0 text-bg-success " role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+         Your message has been sent. We will contact you shortly.
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
 </div>
 
-      </div>
-    </section>
-
-  <!-- Services (6 cards) -->
-<section id="services" class="bg-white border-t border-b border-slate-200 py-16">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold">Our Services</h2>
-    <p class="mt-2 text-slate-600 max-w-2xl">
-      Comprehensive digital services to scale your brand, build visibility, and generate consistent revenue growth.
-    </p>
-
-    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <!-- Digital Marketing -->
-      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
-        <div class="text-3xl">🎯</div>
-        <h3 class="mt-3 font-semibold">Digital Marketing</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          End-to-end campaigns across multiple platforms.  
-          From strategy to execution, we focus on generating qualified leads.  
-          Regular performance tracking ensures ROI-driven growth.  
-          Perfect for businesses that want consistent visibility.
-        </p>
-        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
-      </div>
-
-      <!-- SEO & Content -->
-      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
-        <div class="text-3xl">🔍</div>
-        <h3 class="mt-3 font-semibold">SEO & Content</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Technical SEO audits to fix hidden issues.  
-          Keyword-focused blogs and landing pages for organic growth.  
-          Content strategies that position your brand as an authority.  
-          A long-term approach to dominate search results.
-        </p>
-        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
-      </div>
-
-      <!-- App & Web Development -->
-      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
-        <div class="text-3xl">📱</div>
-        <h3 class="mt-3 font-semibold">App & Web Development</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Modern, responsive websites optimized for speed and SEO.  
-          Scalable mobile apps built with the latest frameworks.  
-          Custom features tailored to your business needs.  
-          Secure, reliable, and future-ready digital solutions.
-        </p>
-        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
-      </div>
-
-      <!-- Social Media & Ads -->
-      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
-        <div class="text-3xl">📣</div>
-        <h3 class="mt-3 font-semibold">Social Media & Ads</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Engaging social media campaigns that grow audiences.  
-          Paid ads that maximize reach and generate real conversions.  
-          Creative visuals and copywriting tailored to your niche.  
-          Consistent tracking to ensure budget efficiency.
-        </p>
-        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
-      </div>
-
-      <!-- FB Monetization -->
-      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
-        <div class="text-3xl">💸</div>
-        <h3 class="mt-3 font-semibold">FB Monetization</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Setup and manage your Facebook monetization properly.  
-          Optimize content for maximum ad revenue potential.  
-          Compliance with FB Partner guidelines to stay eligible.  
-          Scale your creator income with strategic guidance.
-        </p>
-        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
-      </div>
-
-      <!-- Branding & Content -->
-      <div class="p-6 rounded-3xl border border-slate-200 bg-slate-50">
-        <div class="text-3xl">🎨</div>
-        <h3 class="mt-3 font-semibold">Branding & Content</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Strong visual identity that makes your brand unforgettable.  
-          High-quality content including reels, graphics, and campaigns.  
-          Storytelling that connects with your audience emotionally.  
-          Designed to turn viewers into loyal customers.
-        </p>
-        <button class="mt-4 get-quote-btn px-4 py-2 rounded-lg border">Get a Quote</button>
-      </div>
-
-    </div>
-
-</section>
-
-
-<!-- Testimonials Section -->
-<section class="max-w-7xl mx-auto px-6 py-8">
-  <h3 class="text-3xl font-bold mb-8 text-left">What Our Clients Say</h3>
-
-  <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
-    
-    <!-- Card 1 -->
-    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
-      <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Michael Johnson">
-        <div>
-          <p class="font-semibold text-lg">Michael Johnson</p>
-          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
-        </div>
-      </div>
-      <p class="mt-5 text-slate-600 leading-relaxed text-base">
-        “Professional, transparent and real results.  
-        Their team guided us step by step with clarity.  
-        We always felt supported throughout the process.”
-      </p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
-      <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/men/44.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Sarah Williams">
-        <div>
-          <p class="font-semibold text-lg">Sarah Williams</p>
-          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
-        </div>
-      </div>
-      <p class="mt-5 text-slate-600 leading-relaxed text-base">
-        “Saved us time and doubled our revenue.  
-        The strategies were simple yet powerful.  
-        We now see consistent growth month after month.”
-      </p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
-      <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="David Anderson">
-        <div>
-          <p class="font-semibold text-lg">David Anderson</p>
-          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
-        </div>
-      </div>
-      <p class="mt-5 text-slate-600 leading-relaxed text-base">
-        “Great communication and flawless execution.  
-        Every milestone was met on time without delays.  
-        Truly feels like working with a trusted partner.”
-      </p>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
-      <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/men/68.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Emma Brown">
-        <div>
-          <p class="font-semibold text-lg">Emma Brown</p>
-          <div class="text-yellow-500 text-base">⭐⭐⭐⭐</div>
-        </div>
-      </div>
-      <p class="mt-5 text-slate-600 leading-relaxed text-base">
-        “Creative solutions that really worked for our brand.  
-        The designs were modern and campaign-ready.  
-        We saw positive feedback from customers instantly.”
-      </p>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
-      <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/men/52.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Christopher Martinez">
-        <div>
-          <p class="font-semibold text-lg">Christopher Martinez</p>
-          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
-        </div>
-      </div>
-      <p class="mt-5 text-slate-600 leading-relaxed text-base">
-        “Delivered on time and exceeded expectations.  
-        Their proactive approach impressed our whole team.  
-        We now rely on them for all major campaigns.”
-      </p>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="min-w-[360px] p-8 rounded-3xl border bg-white snap-start shadow-lg hover:shadow-2xl transition-all duration-300">
-      <div class="flex items-center space-x-4">
-        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="w-20 h-20 rounded-full border-2 shadow-sm" alt="Olivia Davis">
-        <div>
-          <p class="font-semibold text-lg">Olivia Davis</p>
-          <div class="text-yellow-500 text-base">⭐⭐⭐⭐⭐</div>
-        </div>
-      </div>
-      <p class="mt-5 text-slate-600 leading-relaxed text-base">
-        “Very professional and always supportive.  
-        They kept us informed and updated at all times.  
-        Truly reliable and highly recommended service.”
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- Hide scrollbar CSS -->
+<!-- Quote Modal -->
 <style>
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
+  /* Modal chhoti karne ke liye */
+  #quoteModal .modal-dialog {
+    max-width: 400px; /* tum is value ko 350px / 450px adjust kar sakte ho */
   }
 </style>
 
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+       <h5 class="modal-title fw-bold" id="quoteModalLabel">Get a Free Quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 
-    <!-- Privacy Policy -->
-    <section id="privacy" class="bg-white border-t border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 py-16">
-    
-    <!-- Privacy Policy -->
-    <h2 class="text-2xl md:text-3xl font-bold">Privacy Policy</h2>
-    <p class="mt-3 text-slate-600">
-      At The DigiCentra, we value your privacy and are committed to protecting your personal information.  
-      Any data you provide through our forms is stored securely and used only for the purpose of providing our services.  
-      We do not sell, rent, or trade your personal data to third parties.  
-      Access to your information is limited to authorized personnel only.  
-      We may use your email or phone number to communicate updates or respond to inquiries.  
-      All data is handled in compliance with industry standards of security and confidentiality.  
-      By using our website, you consent to the collection and use of information as described in this policy.  
-      If you have questions about your privacy, feel free to contact us directly.
-    </p>
-
-    <!-- Terms & Conditions -->
-    <h2 id="terms" class="text-2xl md:text-3xl font-bold mt-12">Terms & Conditions</h2>
-    <p class="mt-3 text-slate-600">
-      By accessing and using The DigiCentra website, you agree to abide by the following terms and conditions.  
-      All services provided are subject to availability and may be modified or discontinued without prior notice.  
-      Users are responsible for providing accurate and updated information while submitting forms or requests.  
-      Unauthorized use of our website, including misuse of content or data scraping, is strictly prohibited.  
-      Payments (if applicable) must be made in full before services are delivered, unless otherwise agreed in writing.  
-      We are not liable for any indirect damages, delays, or service interruptions beyond our control.  
-      Intellectual property, including logos, designs, and written content, remains the sole property of The DigiCentra.  
-      These terms may be updated from time to time, and continued use of the site indicates acceptance of the latest version.
-    </p>
-
-  </div>
-</section>
-
-
-    <!-- Modal (hidden) -->
-    <div id="modal" class="fixed inset-0 hidden items-center justify-center modal-backdrop z-50">
-      <div class="bg-white rounded-2xl max-w-lg w-full p-6 mx-4">
-        <div class="flex items-start justify-between">
-          <h3 class="text-lg font-semibold">Get a Quote</h3>
-          <button id="closeModal" class="text-slate-500">✕</button>
-        </div>
-        <p id="modalService" class="text-sm text-slate-600 mt-2">Please fill the form and we'll get back to you.</p>
-        <form id="quoteForm" class="mt-4 grid gap-3">
-          <input id="service" type="hidden" name="service" />
-          <input id="name" type="text" placeholder="Full name" required class="px-4 py-3 rounded-lg border" />
-          <input id="email" type="email" placeholder="Email" required class="px-4 py-3 rounded-lg border" />
-          <input id="contact" type="tel" placeholder="Contact number" required class="px-4 py-3 rounded-lg border" />
-          <textarea id="notes" placeholder="Notes / project details" class="px-4 py-3 rounded-lg border h-24"></textarea>
-          <div class="flex items-center gap-3">
-            <button type="submit" class="px-4 py-2 rounded-lg bg-black text-white">Send</button>
-            <button type="button" id="cancel" class="px-4 py-2 rounded-lg border">Cancel</button>
+      <div class="modal-body">
+        <form id="quoteForm" class="needs-validation" novalidate>
+          <div class="mb-2">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control form-control-sm" id="name" name="name" required>
+            <div class="invalid-feedback">name.</div>
           </div>
-          <div id="formStatus" class="text-sm text-slate-600 mt-2"></div>
+
+          <div class="mb-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control form-control-sm" id="email" name="email" required>
+            <div class="invalid-feedback"> email.</div>
+          </div>
+
+          <div class="mb-2">
+            <label for="phone" class="form-label">Contact</label>
+            <input type="tel" class="form-control form-control-sm" id="phone" name="phone" required>
+            <div class="invalid-feedback">contact number</div>
+          </div>
+
+          <div class="mb-2">
+            <label for="message" class="form-label">Description</label>
+            <textarea class="form-control form-control-sm" id="message" name="message" rows="3" required></textarea>
+            <div class="invalid-feedback"> description</div>
+          </div>
+
+          <!-- Simple anti-bot honeypot (hidden) -->
+          <input type="text" name="company" class="d-none" tabindex="-1" autocomplete="off">
+
+          <div class="d-grid">
+            <button type="submit" id="submitBtn" class="btn btn-dark btn-sm rounded-3">
+              <span class="submit-text">Send</span>
+              <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+            </button>
+          </div>
         </form>
       </div>
-    </div>
 
-   <!-- Footer with address, phone, email -->
-<footer class="py-16 bg-slate-100 border-t border-slate-300">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-    
-    <!-- Company Info -->
-    <div>
-      <h4 class="font-bold text-lg">The DigiCentra</h4>
-      <p class="text-sm text-slate-600 mt-3 leading-relaxed">
-        Digital solutions & monetization services.<br>
-        Helping businesses grow with modern strategies and tools.
-      </p>
-      <!-- Social Icons -->
-      <div class="flex space-x-4 mt-4">
-        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+      <div class="modal-footer border-0"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap 5 JS (agar pehle include nahi) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  (function () {
+    const form = document.getElementById('quoteForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const spinner = submitBtn.querySelector('.spinner-border');
+    const submitText = submitBtn.querySelector('.submit-text');
+    const toastEl = document.getElementById('quoteToast');
+    const toast = toastEl ? new bootstrap.Toast(toastEl, { delay: 1500 }) : null;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Bootstrap validation
+      if (!form.checkValidity()) {
+        e.stopPropagation();
+        form.classList.add('was-validated');
+        return;
+      }
+
+      // Honeypot check (if filled, silently block)
+      const hp = form.querySelector('input[name="company"]');
+      if (hp && hp.value.trim() !== '') return;
+
+      // Simulate sending
+      submitBtn.disabled = true;
+      spinner.classList.remove('d-none');
+      submitText.textContent = 'Sending...';
+
+      // Fake delay to look real, then show toast and refresh
+      setTimeout(() => {
+        // Close modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('quoteModal'));
+        modal && modal.hide();
+
+        // Reset button UI
+        spinner.classList.add('d-none');
+        submitText.textContent = 'Send';
+        submitBtn.disabled = false;
+
+        // Show toast
+        toast && toast.show();
+
+        // Refresh after a short moment
+        setTimeout(() => {
+          window.location.reload();
+        }, 1800);
+      }, 1200);
+    }, false);
+  })();
+</script>
+
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h6>The DigiCentra</h6>
+                    <h2>We Boost Your Website Traffic</h2>
+                    <p>We specialize in helping businesses grow by boosting their website traffic through smart and effective digital strategies. Our focus is on driving real visitors, increasing online visibility, and improving customer engagement. With data-driven solutions, we ensure higher reach, better conversions, and long-term growth for your brand.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="border-first-button scroll-to-section">
+                     <a href="#" data-bs-toggle="modal" data-bs-target="#quoteModal">Free Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec-v3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Contact Info -->
-    <div>
-      <h5 class="font-semibold text-lg">Contact</h5>
-      <p class="text-sm text-slate-600 mt-3 space-y-2">
-        <span class="block">📞 Phone: +1 (281) 509 1984</span>
-        <span class="block">✉️ Email: info@thedigicentra.com</span>
-      </p>
-    </div>
-
-    <!-- Address -->
-    <div>
-      <h5 class="font-semibold text-lg">Address</h5>
-      <p class="text-sm text-slate-600 mt-3 leading-relaxed">
-        117 South Lexington Street Ste 100<br>
-        Harrisonville, MO 64701<br>
-        United States
-      </p>
-    </div>
-
   </div>
 
-  <!-- Bottom Bar -->
-  <div class="mt-10 text-center text-sm text-slate-500 border-t pt-6">
-    © 2025 The DigiCentra. All rights reserved.
+  <div id="about" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/about-dec-v3.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="about-right-content">
+                <div class="section-heading">
+                  <h6>About Us</h6>
+                  <h4>Who is Digicentra <em>Agency</em></h4>
+                  <div class="line-dec"></div>
+                </div>
+                <p>Digicentra LLC is a digital marketing company established to help businesses grow and succeed in the online world. We specialize in social media marketing and management, SEO and SEM strategies, online branding and reputation management, paid advertising campaigns such as Google Ads and Meta Ads, as well as content creation and performance-based marketing solutions. Our mission is to deliver measurable results and innovative strategies tailored to every client’s unique goals.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6>Our Services</h6>
+            <h4>What Our Agency <em>Provides</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                        <div class="thumb ">
+                          <span class="icon ms-2 "><img src="assets/images/service-icon-01.png" alt=""></span>
+                           SEO 
+                        </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
+                       Social Media
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
+                        Branding
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
+                       <!-- Social Media  &amp; Ads -->
+                        Analytics
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
+                        Content
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+               <div class="row">
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <!-- SOCIAL MEDIA -->
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>SOCIAL MEDIA</h4>
+                                <p>We help brands build a strong social media presence with creative campaigns, trending content, and targeted ads. From Instagram to LinkedIn, we ensure your brand voice reaches the right people at the right time.</p>
+                                <p>Our strategies focus on engagement, community building, and brand loyalty — turning followers into real customers and advocates of your business.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Platform Management</span> 
+                                  <span><i class="fa fa-check"></i> Paid Campaigns</span> 
+                                  <span><i class="fa fa-check"></i> Creative Strategy</span>
+                                  <span><i class="fa fa-check"></i> Community Growth</span> 
+                                  <span><i class="fa fa-check"></i> Engagement Boost</span> 
+                                  <span><i class="fa fa-check"></i> Brand Awareness</span>
+                                </div>
+                                <p>Stronger engagement and deeper connections that drive long-term growth.</p>
+                               <button type="button" 
+                                      class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm fw-semibold"
+                                      data-bs-toggle="modal" 
+                                      data-bs-target="#quoteModal">
+                                Free Quote
+                              </button>
+
+
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image.jpg" alt="Social Media Marketing">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- SEO -->
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>SEO</h4>
+                                <p>Our SEO experts make sure your website ranks high on search engines. Through keyword research, on-page and off-page SEO, and competitor analysis, we boost your visibility where it matters the most.</p>
+                                <p>With regular audits and advanced optimization, we help you gain consistent organic traffic that converts visitors into loyal customers.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Keyword Research</span> 
+                                  <span><i class="fa fa-check"></i> On-Page SEO</span> 
+                                  <span><i class="fa fa-check"></i> Backlink Building</span>
+                                  <span><i class="fa fa-check"></i> Technical SEO</span> 
+                                  <span><i class="fa fa-check"></i> SEO Audits</span> 
+                                  <span><i class="fa fa-check"></i> Competitor Analysis</span>
+                                </div>
+                                <p>Higher rankings = higher traffic = more leads for your business.</p>
+                                                               <button type="button" 
+                                      class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm fw-semibold"
+                                      data-bs-toggle="modal" 
+                                      data-bs-target="#quoteModal">
+                                Free Quote
+                              </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-02.jpg" alt="SEO Services">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- BRANDING -->
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>BRANDING</h4>
+                                <p>Your brand is your identity. We design and manage powerful branding strategies that build trust and set you apart from the competition. From visuals to messaging, every detail is carefully crafted.</p>
+                                <p>Our goal is to maintain consistency across platforms so your audience remembers your brand for the right reasons and builds a lasting connection with it.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Brand Identity Design</span> 
+                                  <span><i class="fa fa-check"></i> Reputation Management</span> 
+                                  <span><i class="fa fa-check"></i> Messaging Strategy</span>
+                                  <span><i class="fa fa-check"></i> Visual Consistency</span> 
+                                  <span><i class="fa fa-check"></i> Customer Trust</span> 
+                                  <span><i class="fa fa-check"></i> Digital Presence</span>
+                                </div>
+                                <p>Strong branding builds recognition, loyalty, and credibility in the market.</p>
+                                                               <button type="button" 
+                                      class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm fw-semibold"
+                                      data-bs-toggle="modal" 
+                                      data-bs-target="#quoteModal">
+                                Free Quote
+                              </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-03.jpg" alt="Branding Services">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- ANALYTICS -->
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>ANALYTICS</h4>
+                                <p>We turn raw data into meaningful insights. By monitoring website traffic, user behavior, and campaign performance, we help you make smarter business decisions.</p>
+                                <p>With detailed reports and dashboards, you always know what’s working and what needs improvement — so every step is data-driven.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Traffic Monitoring</span> 
+                                  <span><i class="fa fa-check"></i> User Behavior Tracking</span> 
+                                  <span><i class="fa fa-check"></i> Conversion Analysis</span>
+                                  <span><i class="fa fa-check"></i> Campaign Reports</span> 
+                                  <span><i class="fa fa-check"></i> Data Insights</span> 
+                                  <span><i class="fa fa-check"></i> Performance Dashboard</span>
+                                </div>
+                                <p>Analytics transform numbers into strategies that grow your business.</p>
+                                                               <button type="button" 
+                                      class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm fw-semibold"
+                                      data-bs-toggle="modal" 
+                                      data-bs-target="#quoteModal">
+                                Free Quote
+                              </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-04.jpg" alt="Analytics Services">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- CONTENT -->
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>CONTENT</h4>
+                                <p>Content is the backbone of digital marketing. From blog posts to videos, we create content that informs, entertains, and connects with your audience.</p>
+                                <p>Our distribution strategies make sure your content reaches the right audience on the right platforms, maximizing impact and ROI.</p>
+                                <div class="ticks-list">
+                                  <span><i class="fa fa-check"></i> Blog Writing</span> 
+                                  <span><i class="fa fa-check"></i> Video Production</span> 
+                                  <span><i class="fa fa-check"></i> Graphic Design</span>
+                                  <span><i class="fa fa-check"></i> Content Strategy</span> 
+                                  <span><i class="fa fa-check"></i> Social Sharing</span> 
+                                  <span><i class="fa fa-check"></i> Audience Engagement</span>
+                                </div>
+                                <p>Clear, powerful, and memorable content that grows your brand.</p>
+                                                               <button type="button" 
+                                      class="btn btn-primary btn-sm px-4 py-2 rounded-3 shadow-sm fw-semibold"
+                                      data-bs-toggle="modal" 
+                                      data-bs-target="#quoteModal">
+                                Free Quote
+                              </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image.jpg" alt="Content Creation">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="free-quote" class="free-quote">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+            <h6>Get Your Free Quote</h6>
+            <h4>Grow With Us Now</h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+         <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-4 col-sm-4">
+                <fieldset>
+                  <input type="url" name="web" class="" placeholder="Your website URL...">
+                </fieldset>
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <fieldset>
+                  <input type="email" name="address" class="" placeholder="Email Address...">
+                </fieldset>
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <fieldset>
+                  <button type="submit" class="main-button" id="getQuoteBtn">Get Quote Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+
+<!-- Bootstrap Toast (Notification) -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055">
+  <div id="quoteToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Your request has been submitted! We will contact you shortly.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById("search").addEventListener("submit", function (e) {
+    e.preventDefault(); // page reload stop
+    var toastEl = document.getElementById("quoteToast");
+    var toast = new bootstrap.Toast(toastEl);
+    toast.show();
+    this.reset(); // form clear after submit
+  });
+</script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6>Contact Us</h6>
+            <h4>Get In Touch With Us <em>Now</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="contact-dec">
+                  <img src="assets/images/contact-dec-v3.png" alt="">
+                </div>
+              </div>
+              <!-- <div class="col-lg-5">
+                <div id="map">
+                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div> -->
+              <div class="col-lg-12">
+                <div class="fill-form">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/phone-icon.png" alt="">
+                          <a href="#">+1 (281) 509 1984</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/email-icon.png" alt="">
+                          <a href="#">info@thedigicentra.com</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/location-icon.png" alt="">
+                          <a href="#">117 South Lexington Street Ste 100
+                            Harrisonville, MO 64701
+                            United States
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                      </fieldset>
+                      <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                      </fieldset>
+                      <fieldset>
+                        <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="main-button">Get Free Quote</button>
+                      </fieldset>
+                      <!-- Toast Notification -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+  <div id="submitToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+         Your form has been submitted successfully. We will contact you shortly.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("form-submit").addEventListener("click", function (e) {
+    e.preventDefault(); // agar test kar rahe ho to page refresh na ho
+    var toastEl = document.getElementById("submitToast");
+    var toast = new bootstrap.Toast(toastEl);
+    toast.show();
+  });
+</script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <footer class="bg-dark text-white py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-between align-items-center">
+        <p class="mb-0">© 2025 The DigiCentra. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>
+          <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
+<!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-height:400px; overflow-y:auto;">
+        <p>At Digicentra LLC, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard the information you provide to us.</p>
+        <h6>Information We Collect</h6>
+        <ul>
+          <li>Personal details you provide such as your name, email address, or contact number.</li>
+          <li>Business or project-related details when you request our services.</li>
+          <li>Technical data such as cookies or website usage for analytics purposes.</li>
+        </ul>
+        <h6>How We Use Your Information</h6>
+        <ul>
+          <li>To deliver the services you request.</li>
+          <li>To improve our website, communication, and customer experience.</li>
+          <li>To send updates, offers, or important information about our services.</li>
+        </ul>
+        <h6>Data Protection</h6>
+        <p>We use secure systems to protect your personal data from unauthorized access, disclosure, or misuse. We do not sell or share your data with third parties unless legally required.</p>
+        <h6>Your Rights</h6>
+        <p>You may request correction or deletion of your information at any time by contacting us.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-   <style>
-  section {
-    scroll-margin-top: 30px; /* jitna gap chahiye utna px badha do */
-  }
-</style>
-    <script>
-  // Modal logic
-  const modal = document.getElementById('modal');
-  const modalService = document.getElementById('modalService');
-  const serviceInput = document.getElementById('service');
-  const closeModal = document.getElementById('closeModal');
-  const cancel = document.getElementById('cancel');
-  const form = document.getElementById('quoteForm');
-  const formStatus = document.getElementById('formStatus');
-
-  document.querySelectorAll('.get-quote-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const card = e.target.closest('div');
-      const title = card.querySelector('h3').innerText;
-      serviceInput.value = title;
-      modalService.innerText = 'Service: ' + title;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex', 'opacity-0');
-      setTimeout(() => modal.classList.remove('opacity-0'), 10);
-    });
-  });
-
-  function hideModal(){
-    modal.classList.add('opacity-0');
-    setTimeout(() => {
-      modal.classList.remove('flex');
-      modal.classList.add('hidden');
-      formStatus.innerText = '';
-    }, 300); // smooth close
-  }
-  closeModal.addEventListener('click', hideModal);
-  cancel.addEventListener('click', hideModal);
-
-  // Form submit
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Modal smoothly band ho
-    hideModal();
-
-    // ✅ Notification create
-    const notification = document.createElement('div');
-    notification.innerText = "✅ Your form is submitted. We will contact you soon.";
-    notification.style.position = "fixed";
-    notification.style.top = "20px";
-    notification.style.right = "20px";
-    notification.style.background = "#4CAF50";
-    notification.style.color = "white";
-    notification.style.padding = "15px 20px";
-    notification.style.borderRadius = "10px";
-    notification.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
-    notification.style.zIndex = "9999";
-    notification.style.fontSize = "16px";
-    notification.style.fontFamily = "sans-serif";
-    notification.style.opacity = "0";
-    notification.style.transform = "translateY(-10px)";
-    notification.style.transition = "all 0.4s ease";
-
-    document.body.appendChild(notification);
-
-    // Animate in
-    setTimeout(() => {
-      notification.style.opacity = "1";
-      notification.style.transform = "translateY(0)";
-    }, 50);
-
-    // 3 sec baad animate out + reload
-    setTimeout(() => {
-      notification.style.opacity = "0";
-      notification.style.transform = "translateY(-10px)";
-      setTimeout(() => {
-        notification.remove();
-        location.reload(); // ✅ page reload
-      }, 400);
-    }, 3000);
-
-    // Form reset
-    form.reset();
-  });
-</script>
-
-<!-- Scroll to Top Button -->
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" 
-  class="hidden fixed bottom-6 right-6 bg-black text-white 
-         flex items-center justify-center 
-         rounded-full shadow-lg 
-         hover:bg-gray-800 transition-all duration-500 
-         ease-in-out transform hover:scale-110 opacity-0 aspect-square w-12">
-  
-  <!-- Arrow Up Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-  </svg>
-</button>
+<!-- Terms & Conditions Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-height:400px; overflow-y:auto;">
+        <p>These Terms and Conditions govern your use of Digicentra LLC’s services and website. By engaging with our company, you agree to the following:</p>
+        <ol>
+          <li><strong>Services</strong> – Digicentra LLC provides digital marketing and online business solutions including SEO, social media management, paid advertising, and related services.</li>
+          <li><strong>Client Responsibilities</strong> – Clients must provide accurate information, materials, and timely feedback for the successful delivery of services.</li>
+          <li><strong>Payments</strong> – All payments must be made according to agreed terms before or during the provision of services.</li>
+          <li><strong>Intellectual Property</strong> – Any materials provided by the client remain the client’s property. Marketing materials or deliverables created by Digicentra LLC will be transferred upon full payment.</li>
+          <li><strong>Liability</strong> – Digicentra LLC is not liable for indirect, incidental, or consequential damages arising from the use of our services.</li>
+          <li><strong>Governing Law</strong> – This Agreement shall be governed by the laws of the State of Missouri, USA.</li>
+        </ol>
+        <h6>Refund Policy</h6>
+        <ul>
+          <li>Once a project or service has commenced, payments are non-refundable.</li>
+          <li>If a client cancels before the project begins, a full refund will be issued within 7 business days.</li>
+          <li>Digital products, reports, or downloadable materials are non-refundable.</li>
+        </ul>
+        <p>For any disputes, please contact us directly, and we will review on a case-by-case basis.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-<script>
-  const scrollBtn = document.getElementById("scrollTopBtn");
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
 
-  // Show button when scroll is down
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      scrollBtn.classList.remove("hidden");
-      scrollBtn.style.opacity = "1";
-    } else {
-      scrollBtn.style.opacity = "0";
-      setTimeout(() => {
-        if (scrollBtn.style.opacity === "0") {
-          scrollBtn.classList.add("hidden");
-        }
-      }, 500); // fade-out duration
-    }
-  });
-
-  // Smooth scroll to top
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-
-
-  </body>
+</body>
 </html>
